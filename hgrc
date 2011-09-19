@@ -1,0 +1,9 @@
+[ui]
+verbose = True
+
+[defaults]
+log = -l 3
+
+[extensions]
+hgext.bookmarks =
+hggit =
