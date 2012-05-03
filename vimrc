@@ -17,9 +17,6 @@ set incsearch
 set nocompatible
 set makeprg=rake
 
-filetype off
-" Use pathogen bundles from http://www.vim.org/scripts/script.php?script_id=2332
-call pathogen#runtime_append_all_bundles()
 filetype on
 "filetype plugin indent on
 
@@ -32,7 +29,7 @@ set shell=bash
 "map <up> <nop>
 "map <down> <nop>
 
-autocmd FileType python set omnifunc=pythoncomplete#Complete
+"autocmd FileType python set omnifunc=pythoncomplete#Complete
 inoremap <Nul> <C-x><C-o>
 
 " Get rid of stupid middle button paster
@@ -64,9 +61,14 @@ let g:screen_windowname = "0"
 let python_highlight_space_errors = 1
 
 iab bunny+ (\ /)<CR>(O.o)<CR>(> <) Bunny approves these changes
+iab fbz BugzId
 
 " Classic error
 ab Tabe tabe
 
 map <F2> "+p
 
+map <C-J> :s/\(.\{,75}\) /\1\r/<Enter>:nohl<Enter>
+set colorcolumn=80
+set foldmethod=indent
+set foldlevel=1000
