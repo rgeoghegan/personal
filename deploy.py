@@ -1,7 +1,6 @@
 import os
-import shutil
 
-IGNORE_FILES = set(["colours.sh", "deploy.py"])
+IGNORE_FILES = set(["colours.sh", "deploy.py", "deploy.pyc"])
 
 def ignore(filename):
     if filename in IGNORE_FILES:
@@ -21,5 +20,5 @@ if __name__ == "__main__":
             if os.path.exists(real_dest):
                 print "File %r already exists" % (filename,)
             else:
-                print "Copying %r" % (filename,)
-                shutil.copy(filename, real_dest)
+                print "Symlinking %r" % (filename,)
+                os.symlink(filename, real_dest)
