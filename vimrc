@@ -22,6 +22,7 @@ filetype off
 call pathogen#runtime_append_all_bundles()
 filetype on
 "filetype plugin indent on
+cindent
 
 " Unix specific settings
 set shell=bash
@@ -69,4 +70,5 @@ iab bunny+ (\ /)<CR>(O.o)<CR>(> <) Bunny approves these changes
 ab Tabe tabe
 
 map <F2> "+p
+map <C-J> :s/\(.\{,80}\) /\1\r/<Esc>
 
