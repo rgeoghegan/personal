@@ -14,6 +14,7 @@ case "$TERM" in
     xterm-color) color_prompt=yes;;
 esac
 
+
 if [ -n $color_prompt ]; then
     if [ -f ~/.personal/colours.sh ]; then
        . ~/.personal/colours.sh
@@ -61,7 +62,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-#export PATH=$PATH:$HOME/bin:/opt/test/bin:/opt/local/bin:/opt/local/sbin
 export PATH=$PATH:$HOME/bin:/usr/local/sbin:$HOME/.gem/ruby/1.8/bin
 export MANPATH=/opt/local/share/man:$MANPATH
 
@@ -79,3 +79,4 @@ function cdd
 alias rm='rm -i'
 
 export EDITOR=vim
+
