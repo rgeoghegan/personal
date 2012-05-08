@@ -18,8 +18,7 @@ set nocompatible
 set makeprg=rake
 
 filetype on
-"filetype plugin indent on
-cindent
+filetype plugin indent on
 
 " Unix specific settings
 set shell=bash
