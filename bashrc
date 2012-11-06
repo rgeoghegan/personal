@@ -65,11 +65,6 @@ fi
 export PATH=$PATH:$HOME/bin:/usr/local/sbin:$HOME/.gem/ruby/1.8/bin
 export MANPATH=/opt/local/share/man:$MANPATH
 
-if [ -f ~/.python/bin/activate ]; then
-    VIRTUAL_ENV_DISABLE_PROMPT=1
-    source ~/.python/bin/activate
-fi
-
 function cdd
 {
     cd $1

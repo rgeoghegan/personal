@@ -1,5 +1,6 @@
 [ui]
 verbose = True
+ignore.global = ~/.personal/hgignore
 
 [defaults]
 log = -l 3
