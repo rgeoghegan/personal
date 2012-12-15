@@ -3,4 +3,4 @@ set enc=utf8
 colorscheme github
 
 " GTK vim
-set guifont=Mensch:h13
+set guifont=Monaco:h14
