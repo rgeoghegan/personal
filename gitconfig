@@ -1,2 +1,6 @@
 [user]
 	name = Rory Geoghegan
+    email = r.geoghegan@gmail.com
+
+[core]
+    excludesfile = ~/.personal/gitignore
