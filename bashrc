@@ -65,10 +65,9 @@ fi
 export PATH=$PATH:$HOME/bin:/usr/local/sbin:$HOME/.gem/ruby/1.8/bin
 export MANPATH=/opt/local/share/man:$MANPATH
 
-if [ -f ~/.python/bin/activate ]; then
-    VIRTUAL_ENV_DISABLE_PROMPT=1
-    source ~/.python/bin/activate
-fi
+# Python wirtualenvs
+source `which virtualenvwrapper.sh`
+workon python3.2
 
 function cdd
 {
@@ -80,3 +79,4 @@ alias rm='rm -i'
 
 export EDITOR=vim
 
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
