@@ -66,7 +66,11 @@ export PATH=$PATH:$HOME/bin:/usr/local/sbin:$HOME/bin
 export MANPATH=/opt/local/share/man:$MANPATH
 
 # Python wirtualenvs
-source `which virtualenvwrapper.sh`
+if which virtualenvwrapper.sh
+then
+    source `which virtualenvwrapper.sh`
+fi
+
 
 function cdd
 {
