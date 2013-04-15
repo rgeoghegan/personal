@@ -72,3 +72,7 @@ map <C-J> :s/\(.\{,75}\) /\1\r/<Enter>:nohl<Enter>
 set colorcolumn=80
 set foldmethod=indent
 set foldlevel=1000
+
+execute pathogen#infect()
+
+map <C-f> :FufFile<CR>

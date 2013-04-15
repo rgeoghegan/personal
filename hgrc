@@ -3,7 +3,4 @@ verbose = True
 ignore.global = ~/.personal/hgignore
 
 [defaults]
-log = -l 3
-
-[extensions]
-hgext.bookmarks =
+#log = -l 3

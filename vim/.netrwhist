@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/rory/.virtualenvs/oi-mac/lib/python2.7'
+let g:netrw_dirhist_2='/Users/rory/.virtualenvs/oi-mac/lib/python2.7/site-packages'
+let g:netrw_dirhist_3='/Users/rory/.virtualenvs/oi-mac/lib/python2.7/site-packages/ansible'
+let g:netrw_dirhist_4='/Users/rory/ubuntu-precise/src/oi2'
+let g:netrw_dirhist_5='/Users/rory/hacks/chrome/add_answers'
+let g:netrw_dirhist_6='/Users/rory/hacks/dataimport/2013-03-21'

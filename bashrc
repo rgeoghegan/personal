@@ -8,7 +8,6 @@
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
-complete -r cd
 
 case "$TERM" in
     xterm-color) color_prompt=yes;;
@@ -62,7 +61,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-export PATH=$PATH:$HOME/bin:/usr/local/sbin:$HOME/.gem/ruby/1.8/bin
+export PATH=$HOME/bin:$PATH:/usr/local/sbin:$HOME/.gem/ruby/1.8/bin
 export MANPATH=/opt/local/share/man:$MANPATH
 
 function cdd
