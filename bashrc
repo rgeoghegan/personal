@@ -8,7 +8,6 @@
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
-complete -r cd
 
 case "$TERM" in
     xterm-color) color_prompt=yes;;
@@ -62,7 +61,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-export PATH=$PATH:$HOME/bin:/usr/local/sbin:$HOME/bin
+export PATH=$HOME/bin:$PATH:/usr/local/sbin:$HOME/.gem/ruby/1.8/bin:$HOME/.rvm/bin
 export MANPATH=/opt/local/share/man:$MANPATH
 
 # Python wirtualenvs
@@ -70,7 +69,6 @@ if which virtualenvwrapper.sh
 then
     source `which virtualenvwrapper.sh`
 fi
-
 
 function cdd
 {
@@ -81,5 +79,3 @@ function cdd
 alias rm='rm -i'
 
 export EDITOR=vim
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
