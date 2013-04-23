@@ -64,6 +64,15 @@ fi
 export PATH=$HOME/bin:$PATH:/usr/local/sbin:$HOME/.gem/ruby/1.8/bin
 export MANPATH=/opt/local/share/man:$MANPATH
 
+export PATH=$PATH:$HOME/bin:/usr/local/sbin:$HOME/bin
+export MANPATH=/opt/local/share/man:$MANPATH
+
+# Python wirtualenvs
+if which virtualenvwrapper.sh
+then
+    source `which virtualenvwrapper.sh`
+fi
+
 function cdd
 {
     cd $1
@@ -74,3 +83,4 @@ alias rm='rm -i'
 
 export EDITOR=vim
 
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

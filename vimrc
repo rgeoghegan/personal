@@ -18,7 +18,7 @@ set nocompatible
 set makeprg=rake
 
 filetype on
-"filetype plugin indent on
+filetype plugin indent on
 
 " Unix specific settings
 set shell=bash
@@ -67,6 +67,7 @@ iab fbz BugzId
 ab Tabe tabe
 
 map <F2> "+p
+map <C-J> :s/\(.\{,80}\) /\1\r/<Esc>
 
 map <C-J> :s/\(.\{,75}\) /\1\r/<Enter>:nohl<Enter>
 set colorcolumn=80
