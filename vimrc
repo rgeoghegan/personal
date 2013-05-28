@@ -17,8 +17,28 @@ set incsearch
 set nocompatible
 set makeprg=rake
 
-filetype on
+filetype off
+
+" Vundle
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+" Now for my bundles
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'kien/ctrlp.vim'
+
 filetype plugin indent on
+
+" Powerline stuff
+" let g:Powerline_symbols = 'fancy'
+set fillchars+=stl:\ ,stlnc:\
+
+" Ctrl P
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc
+let g:ctrlp_custom_ignore = '\v\.pyc$'
+map <C-f> :CtrlP<Enter>
+
 
 " Unix specific settings
 set shell=bash
@@ -67,13 +87,11 @@ iab fbz BugzId
 ab Tabe tabe
 
 map <F2> "+p
-map <C-J> :s/\(.\{,80}\) /\1\r/<Esc>
-
 map <C-J> :s/\(.\{,75}\) /\1\r/<Enter>:nohl<Enter>
 set colorcolumn=80
 set foldmethod=indent
 set foldlevel=1000
 
-execute pathogen#infect()
+" map <C-f> :FufFile<CR>
 
-map <C-f> :FufFile<CR>
+

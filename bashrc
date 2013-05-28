@@ -68,7 +68,7 @@ export PATH=$PATH:$HOME/bin:/usr/local/sbin:$HOME/bin
 export MANPATH=/opt/local/share/man:$MANPATH
 
 # Python wirtualenvs
-if which virtualenvwrapper.sh
+if test -e `which virtualenvwrapper.sh`
 then
     source `which virtualenvwrapper.sh`
 fi
