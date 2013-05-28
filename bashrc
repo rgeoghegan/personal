@@ -61,9 +61,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-export PATH=$HOME/bin:$PATH:/usr/local/sbin:$HOME/.gem/ruby/1.8/bin
-export MANPATH=/opt/local/share/man:$MANPATH
-
 export PATH=$PATH:$HOME/bin:/usr/local/sbin:$HOME/bin
 export MANPATH=/opt/local/share/man:$MANPATH
 
@@ -82,5 +79,3 @@ function cdd
 alias rm='rm -i'
 
 export EDITOR=vim
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
