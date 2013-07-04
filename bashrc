@@ -61,7 +61,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-export PATH=$PATH:$HOME/bin:/usr/local/sbin:$HOME/bin
+export PATH=$HOME/bin:/usr/local/sbin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 
 # Python wirtualenvs
