@@ -65,10 +65,14 @@ export PATH=$HOME/bin:/usr/local/sbin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 
 # Python wirtualenvs
-if test -e `which virtualenvwrapper.sh`
-then
-    source `which virtualenvwrapper.sh`
-fi
+#if test -e `which virtualenvwrapper.sh`
+#then
+#    source `which virtualenvwrapper.sh`
+#fi
+
+
+# Python pyenv instead
+#eval "$(pyenv init -)"
 
 function cdd
 {
@@ -77,5 +81,10 @@ function cdd
 }
 
 alias rm='rm -i'
+alias ls='ls -G'
+alias ag_python="ag -G '.*.py' --ignore migrations --ignore tests"
+alias gc='git checkout'
+alias gs='git status'
+alias gd='git diff'
 
 export EDITOR=vim

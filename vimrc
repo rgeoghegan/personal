@@ -27,6 +27,9 @@ Bundle 'gmarik/vundle'
 " Now for my bundles
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'kien/ctrlp.vim'
+Bundle 'ack.vim'
+Bundle 'The-NERD-tree'
+Bundle 'jpalardy/vim-slime'
 
 filetype plugin indent on
 
@@ -82,6 +85,8 @@ let python_highlight_space_errors = 1
 
 iab bunny+ (\ /)<CR>(O.o)<CR>(> <) Bunny approves these changes
 iab fbz BugzId
+iab prdb print("***** RORY: %r" % (,))<Esc>F,i
+iab import_p import pudb; pudb.set_trace()
 
 " Classic error
 ab Tabe tabe
@@ -94,4 +99,4 @@ set foldlevel=1000
 
 " map <C-f> :FufFile<CR>
 
-
+au FileType gitcommit set tw=72

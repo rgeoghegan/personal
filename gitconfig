@@ -1,2 +1,5 @@
 [core]
     excludesfile = ~/.personal/gitignore
+
+[push]
+    default = simple

@@ -1,6 +1,6 @@
 "gvim settings
 set enc=utf8
-colorscheme github
+colorscheme colorful
 
 " GTK vim
 set guifont=Mensch:h14
