@@ -20,7 +20,7 @@ set makeprg=rake
 filetype off
 
 " Vundle
-set rtp+=~/.vim/bundle/vundle
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
@@ -84,9 +84,8 @@ let g:screen_windowname = "0"
 let python_highlight_space_errors = 1
 
 iab bunny+ (\ /)<CR>(O.o)<CR>(> <) Bunny approves these changes
-iab fbz BugzId
-iab prdb print("***** RORY: %r" % (,))<Esc>F,i
-iab import_p import pudb; pudb.set_trace()
+iab prdb print("***** RORY <C-R>=expand('%') . ':' . line('.')<CR> {!r}".format())<Esc>F{hi
+iab pudb- import pudb; pudb.set_trace() # RORY PUDB
 
 " Classic error
 ab Tabe tabe
