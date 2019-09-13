@@ -1,3 +1,7 @@
+# Put the following in your ~/.gitconfig file to use this one
+# [include]
+#     path = [PATH_TO_PERSONAL_REPO]/gitconfig
+
 [core]
     excludesfile = ~/.personal/gitignore
 

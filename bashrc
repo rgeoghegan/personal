@@ -64,16 +64,6 @@ fi
 export PATH=$HOME/bin:/usr/local/sbin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 
-# Python wirtualenvs
-#if test -e `which virtualenvwrapper.sh`
-#then
-#    source `which virtualenvwrapper.sh`
-#fi
-
-
-# Python pyenv instead
-#eval "$(pyenv init -)"
-
 function cdd
 {
     cd $1

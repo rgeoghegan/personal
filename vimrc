@@ -16,32 +16,13 @@ set incsearch
 
 set nocompatible
 set makeprg=rake
-
-filetype off
-
-" Vundle
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
-Bundle 'gmarik/vundle'
-
-" Now for my bundles
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'kien/ctrlp.vim'
-Bundle 'ack.vim'
-Bundle 'The-NERD-tree'
-Bundle 'jpalardy/vim-slime'
+set switchbuf+=usetab,newtab
 
 filetype plugin indent on
 
 " Powerline stuff
 " let g:Powerline_symbols = 'fancy'
 set fillchars+=stl:\ ,stlnc:\
-
-" Ctrl P
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc
-let g:ctrlp_custom_ignore = '\v\.pyc$'
-map <C-f> :CtrlP<Enter>
-
 
 " Unix specific settings
 set shell=bash
@@ -51,9 +32,6 @@ set shell=bash
 "map <right> <nop>
 "map <up> <nop>
 "map <down> <nop>
-
-"autocmd FileType python set omnifunc=pythoncomplete#Complete
-inoremap <Nul> <C-x><C-o>
 
 " Get rid of stupid middle button paster
 map <MiddleMouse> <Nop>
@@ -80,11 +58,13 @@ set laststatus=2
 " Stuff for slime plugin
 let g:screen_sessionname = "slime"
 let g:screen_windowname = "0"
+let g:slime_target = "tmux"
 
 let python_highlight_space_errors = 1
 
 iab bunny+ (\ /)<CR>(O.o)<CR>(> <) Bunny approves these changes
 iab prdb print("***** RORY <C-R>=expand('%') . ':' . line('.')<CR> {!r}".format())<Esc>F{hi
+iab grdb fmt.Printf("***** RORY <C-R>=expand('%') . ':' . line('.')<CR> %+v\n", )<Esc>F)hi
 iab pudb- import pudb; pudb.set_trace() # RORY PUDB
 
 " Classic error
@@ -93,9 +73,4 @@ ab Tabe tabe
 map <F2> "+p
 map <C-J> :s/\(.\{,75}\) /\1\r/<Enter>:nohl<Enter>
 set colorcolumn=80
-set foldmethod=indent
-set foldlevel=1000
-
-" map <C-f> :FufFile<CR>
-
 au FileType gitcommit set tw=72
