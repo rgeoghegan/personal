@@ -19,9 +19,6 @@ set makeprg=rake
 set switchbuf+=usetab,newtab
 
 filetype plugin indent on
-
-" Powerline stuff
-" let g:Powerline_symbols = 'fancy'
 set fillchars+=stl:\ ,stlnc:\
 
 " Unix specific settings
