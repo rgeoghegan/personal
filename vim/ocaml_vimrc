@@ -1,0 +1,2 @@
+iab prdb Printf.printf "***** RORY <C-R>=expand('%') . ':' . line('.')<CR> %s\n";<Esc>F%hi
+iab prfail fail "***** RORY <C-R>=expand('%') . ':' . line('.')<CR>\n";<Esc>
