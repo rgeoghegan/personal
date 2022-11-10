@@ -2,5 +2,5 @@
 *.pyc
 vim/.netrwhist
 vim/bundle
-vim/pack
 /vim/view
+/vim/pack/*/*
