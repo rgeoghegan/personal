@@ -7,3 +7,10 @@ bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
 
 eval "$(pyenv init -)"
+
+# The following lines were added by compinstall
+zstyle :compinstall filename '~/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
