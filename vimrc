@@ -57,8 +57,8 @@ set laststatus=2
 runtime ftplugin/man.vim
 
 " Stuff for slime plugin
-let g:screen_sessionname = "slime"
-let g:screen_windowname = "0"
+"let g:screen_sessionname = "slime"
+"let g:screen_windowname = "0"
 let g:slime_target = "tmux"
 
 let python_highlight_space_errors = 1
