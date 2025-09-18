@@ -13,11 +13,12 @@ set number
 set linebreak
 autocmd BufNew * set wrap
 set incsearch
+set relativenumber
 
 set nocompatible
 set makeprg=rake
-set switchbuf+=usetab,newtab
 set noswapfile
+set splitright
 
 filetype plugin indent on
 set fillchars+=stl:\ ,stlnc:\
